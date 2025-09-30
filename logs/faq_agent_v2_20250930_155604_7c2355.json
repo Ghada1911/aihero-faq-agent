@@ -1,0 +1,158 @@
+{
+  "agent_name": "faq_agent_v2",
+  "system_prompt": "You are a helpful assistant for a course.  \n\nUse the search tool to find relevant information from the course materials before answering questions.  \n\nAlways include references by citing the filename of the source material you used.  \nWhen citing the reference, replace \"faq-main\" by the full path to the GitHub repository: \"https://github.com/DataTalksClub/faq/blob/main/\"\nFormat: [LINK TITLE](FULL_GITHUB_LINK)\n\nIf the search doesn't return relevant results, let the user know and provide general guidance.",
+  "model": "gpt-4o-mini",
+  "messages": [
+    {
+      "parts": [
+        {
+          "content": "How do I install Kafka in Python?",
+          "timestamp": "2025-09-30 15:55:59.642053+00:00",
+          "part_kind": "user-prompt"
+        }
+      ],
+      "instructions": "You are a helpful assistant for a course.  \n\nUse the search tool to find relevant information from the course materials before answering questions.  \n\nAlways include references by citing the filename of the source material you used.  \nWhen citing the reference, replace \"faq-main\" by the full path to the GitHub repository: \"https://github.com/DataTalksClub/faq/blob/main/\"\nFormat: [LINK TITLE](FULL_GITHUB_LINK)\n\nIf the search doesn't return relevant results, let the user know and provide general guidance.",
+      "kind": "request"
+    },
+    {
+      "parts": [
+        {
+          "tool_name": "text_search",
+          "args": "{\"query\":\"install Kafka in Python\"}",
+          "tool_call_id": "call_iJvcGxH35YHpnuuFZooUilzN",
+          "part_kind": "tool-call"
+        }
+      ],
+      "usage": {
+        "input_tokens": 149,
+        "cache_write_tokens": 0,
+        "cache_read_tokens": 0,
+        "output_tokens": 17,
+        "input_audio_tokens": 0,
+        "cache_audio_read_tokens": 0,
+        "output_audio_tokens": 0,
+        "details": {
+          "accepted_prediction_tokens": 0,
+          "audio_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "model_name": "gpt-4o-mini-2024-07-18",
+      "timestamp": "2025-09-30 15:56:01+00:00",
+      "kind": "response",
+      "provider_name": "openai",
+      "provider_details": {
+        "finish_reason": "tool_calls"
+      },
+      "provider_response_id": "chatcmpl-CLWzpDuBWjiI9Hvb6mHprsXV8ki5o",
+      "finish_reason": "tool_call"
+    },
+    {
+      "parts": [
+        {
+          "tool_name": "text_search",
+          "content": [
+            {
+              "filename": "faq-main/file1.md",
+              "content": "Example content"
+            }
+          ],
+          "tool_call_id": "call_iJvcGxH35YHpnuuFZooUilzN",
+          "metadata": null,
+          "timestamp": "2025-09-30 15:56:01.649392+00:00",
+          "part_kind": "tool-return"
+        }
+      ],
+      "instructions": "You are a helpful assistant for a course.  \n\nUse the search tool to find relevant information from the course materials before answering questions.  \n\nAlways include references by citing the filename of the source material you used.  \nWhen citing the reference, replace \"faq-main\" by the full path to the GitHub repository: \"https://github.com/DataTalksClub/faq/blob/main/\"\nFormat: [LINK TITLE](FULL_GITHUB_LINK)\n\nIf the search doesn't return relevant results, let the user know and provide general guidance.",
+      "kind": "request"
+    },
+    {
+      "parts": [
+        {
+          "tool_name": "text_search",
+          "args": "{\"query\":\"Kafka Python installation\"}",
+          "tool_call_id": "call_mpYYr3IQ5OEkKbJa6NNFDgUp",
+          "part_kind": "tool-call"
+        }
+      ],
+      "usage": {
+        "input_tokens": 190,
+        "cache_write_tokens": 0,
+        "cache_read_tokens": 0,
+        "output_tokens": 16,
+        "input_audio_tokens": 0,
+        "cache_audio_read_tokens": 0,
+        "output_audio_tokens": 0,
+        "details": {
+          "accepted_prediction_tokens": 0,
+          "audio_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "model_name": "gpt-4o-mini-2024-07-18",
+      "timestamp": "2025-09-30 15:56:02+00:00",
+      "kind": "response",
+      "provider_name": "openai",
+      "provider_details": {
+        "finish_reason": "tool_calls"
+      },
+      "provider_response_id": "chatcmpl-CLWzq16iTTxP98cMzvMpuZtWuiNXq",
+      "finish_reason": "tool_call"
+    },
+    {
+      "parts": [
+        {
+          "tool_name": "text_search",
+          "content": [
+            {
+              "filename": "faq-main/file1.md",
+              "content": "Example content"
+            }
+          ],
+          "tool_call_id": "call_mpYYr3IQ5OEkKbJa6NNFDgUp",
+          "metadata": null,
+          "timestamp": "2025-09-30 15:56:02.816849+00:00",
+          "part_kind": "tool-return"
+        }
+      ],
+      "instructions": "You are a helpful assistant for a course.  \n\nUse the search tool to find relevant information from the course materials before answering questions.  \n\nAlways include references by citing the filename of the source material you used.  \nWhen citing the reference, replace \"faq-main\" by the full path to the GitHub repository: \"https://github.com/DataTalksClub/faq/blob/main/\"\nFormat: [LINK TITLE](FULL_GITHUB_LINK)\n\nIf the search doesn't return relevant results, let the user know and provide general guidance.",
+      "kind": "request"
+    },
+    {
+      "parts": [
+        {
+          "content": "It seems that the search did not return specific information regarding the installation of Kafka in Python. However, I can provide general guidance on how to do this.\n\nTo use Kafka in Python, you typically need to install the `kafka-python` package, which allows you to interact with Kafka.\n\nHere\u2019s how you can install it:\n\n1. **Using pip**: Run the following command in your terminal:\n   ```\n   pip install kafka-python\n   ```\n\n2. **Using conda** (if you prefer using Anaconda):\n   ```\n   conda install -c conda-forge kafka-python\n   ```\n\nOnce installed, you can start using Kafka in your Python scripts by importing the library and connecting to your Kafka server.\n\nFor further details or advanced configurations, please refer to the official documentation of the `kafka-python` library or check out resources from the Kafka community.\n\nIf you need more specific information, feel free to ask!",
+          "id": null,
+          "part_kind": "text"
+        }
+      ],
+      "usage": {
+        "input_tokens": 230,
+        "cache_write_tokens": 0,
+        "cache_read_tokens": 0,
+        "output_tokens": 191,
+        "input_audio_tokens": 0,
+        "cache_audio_read_tokens": 0,
+        "output_audio_tokens": 0,
+        "details": {
+          "accepted_prediction_tokens": 0,
+          "audio_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "model_name": "gpt-4o-mini-2024-07-18",
+      "timestamp": "2025-09-30 15:56:04+00:00",
+      "kind": "response",
+      "provider_name": "openai",
+      "provider_details": {
+        "finish_reason": "stop"
+      },
+      "provider_response_id": "chatcmpl-CLWzsFeTiRNLEinwUgXxx71CzYDOI",
+      "finish_reason": "stop"
+    }
+  ],
+  "source": "user"
+}

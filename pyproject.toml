@@ -1,0 +1,23 @@
+[project]
+name = "course"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = [
+    "llama-index",
+    "llama-index-core",
+    "minsearch>=0.0.3",
+    "openai>=0.8.0",
+    "pydantic-ai",
+    "python-dotenv>=0.21.1",
+    "python-frontmatter>=1.1.0",
+    "requests>=2.31.0",
+    "sentence-transformers>=2.2.2",
+    "tqdm>=4.67.1",
+]
+
+[dependency-groups]
+dev = [
+    "jupyter>=1.1.1",
+]

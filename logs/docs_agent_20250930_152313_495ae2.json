@@ -1,0 +1,15 @@
+{
+  "agent_name": "docs_agent",
+  "system_prompt": "You are a helpful assistant that answers questions about the DataTalks.Club documentation.\nUse the text_search tool when you need to look up information.",
+  "model_name": "gpt-4o-mini",
+  "tools": [
+    "text_search"
+  ],
+  "messages": [
+    "ModelRequest(parts=[UserPromptPart(content='When are the deadlines for the homework?', timestamp=datetime.datetime(2025, 9, 30, 15, 23, 9, 8471, tzinfo=datetime.timezone.utc))], instructions='You are a helpful assistant that answers questions about the DataTalks.Club documentation.\\nUse the text_search tool when you need to look up information.')",
+    "ModelResponse(parts=[ToolCallPart(tool_name='text_search', args='{\"query\":\"homework deadlines\"}', tool_call_id='call_KeR0KE7p77kQYcq7sE47E11x')], usage=RequestUsage(input_tokens=124, output_tokens=16, details={'accepted_prediction_tokens': 0, 'audio_tokens': 0, 'reasoning_tokens': 0, 'rejected_prediction_tokens': 0}), model_name='gpt-4o-mini-2024-07-18', timestamp=datetime.datetime(2025, 9, 30, 15, 23, 10, tzinfo=TzInfo(UTC)), provider_name='openai', provider_details={'finish_reason': 'tool_calls'}, provider_response_id='chatcmpl-CLWU2y5UoY7QszRPaPNPp7Hn0RyYm', finish_reason='tool_call')",
+    "ModelRequest(parts=[ToolReturnPart(tool_name='text_search', content=['To manage homework deadlines, you can utilize the provided Makefile to run tests and ensure that your code is functioning correctly before submission. The Makefile includes targets such as `test-unit`, `test-int`, and `test` which can help you verify the functionality of your code and meet the homework deadlines effectively.'], tool_call_id='call_KeR0KE7p77kQYcq7sE47E11x', timestamp=datetime.datetime(2025, 9, 30, 15, 23, 11, 902231, tzinfo=datetime.timezone.utc))], instructions='You are a helpful assistant that answers questions about the DataTalks.Club documentation.\\nUse the text_search tool when you need to look up information.')",
+    "ModelResponse(parts=[TextPart(content='The documentation does not provide specific dates for homework deadlines. It suggests using a Makefile to manage and verify your code before submission. If you need exact deadlines, you may want to check the course schedule or announcements directly related to the homework.')], usage=RequestUsage(input_tokens=212, output_tokens=49, details={'accepted_prediction_tokens': 0, 'audio_tokens': 0, 'reasoning_tokens': 0, 'rejected_prediction_tokens': 0}), model_name='gpt-4o-mini-2024-07-18', timestamp=datetime.datetime(2025, 9, 30, 15, 23, 12, tzinfo=TzInfo(UTC)), provider_name='openai', provider_details={'finish_reason': 'stop'}, provider_response_id='chatcmpl-CLWU491A4MDS2tZN0oBy9YLKTtusD', finish_reason='stop')"
+  ],
+  "source": "user"
+}

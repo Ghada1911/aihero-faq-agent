@@ -1,0 +1,15 @@
+{
+  "agent_name": "docs_agent",
+  "system_prompt": "You are a helpful assistant that answers questions about the DataTalks.Club documentation.\nUse the text_search tool when you need to look up information.",
+  "model_name": "gpt-4o-mini",
+  "tools": [
+    "text_search"
+  ],
+  "messages": [
+    "ModelRequest(parts=[UserPromptPart(content='How do I install Kafka in Python?', timestamp=datetime.datetime(2025, 9, 30, 15, 26, 29, 812108, tzinfo=datetime.timezone.utc))], instructions='You are a helpful assistant that answers questions about the DataTalks.Club documentation.\\nUse the text_search tool when you need to look up information.')",
+    "ModelResponse(parts=[ToolCallPart(tool_name='text_search', args='{\"query\":\"install Kafka in Python\"}', tool_call_id='call_mKevgziJrxbmmzsZqcWrhR0d')], usage=RequestUsage(input_tokens=124, output_tokens=17, details={'accepted_prediction_tokens': 0, 'audio_tokens': 0, 'reasoning_tokens': 0, 'rejected_prediction_tokens': 0}), model_name='gpt-4o-mini-2024-07-18', timestamp=datetime.datetime(2025, 9, 30, 15, 26, 31, tzinfo=TzInfo(UTC)), provider_name='openai', provider_details={'finish_reason': 'tool_calls'}, provider_response_id='chatcmpl-CLWXHQnCKB7Vw9znLaU2sX3I7B5Ia', finish_reason='tool_call')",
+    "ModelRequest(parts=[ToolReturnPart(tool_name='text_search', content=['Kafka can be installed in Python using the `confluent-kafka` library.'], tool_call_id='call_mKevgziJrxbmmzsZqcWrhR0d', timestamp=datetime.datetime(2025, 9, 30, 15, 26, 33, 172419, tzinfo=datetime.timezone.utc))], instructions='You are a helpful assistant that answers questions about the DataTalks.Club documentation.\\nUse the text_search tool when you need to look up information.')",
+    "ModelResponse(parts=[TextPart(content='To install Kafka in Python, you can use the `confluent-kafka` library. You can install it using pip with the following command:\\n\\n```bash\\npip install confluent-kafka\\n``` \\n\\nThis library provides a Python client for Apache Kafka.')], usage=RequestUsage(input_tokens=168, output_tokens=53, details={'accepted_prediction_tokens': 0, 'audio_tokens': 0, 'reasoning_tokens': 0, 'rejected_prediction_tokens': 0}), model_name='gpt-4o-mini-2024-07-18', timestamp=datetime.datetime(2025, 9, 30, 15, 26, 34, tzinfo=TzInfo(UTC)), provider_name='openai', provider_details={'finish_reason': 'stop'}, provider_response_id='chatcmpl-CLWXKmGOPWsxhuazyWmufplSRPaJW', finish_reason='stop')"
+  ],
+  "source": "user"
+}

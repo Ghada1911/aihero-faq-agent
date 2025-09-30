@@ -1,0 +1,99 @@
+{
+  "messages": [
+    {
+      "parts": [
+        {
+          "content": "How do I install Kafka in Python?",
+          "timestamp": "2025-09-30T15:26:29.812108+00:00",
+          "part_kind": "user-prompt"
+        }
+      ],
+      "instructions": "You are a helpful assistant that answers questions about the DataTalks.Club documentation.\nUse the text_search tool when you need to look up information.",
+      "kind": "request"
+    },
+    {
+      "parts": [
+        {
+          "tool_name": "text_search",
+          "args": "{\"query\":\"install Kafka in Python\"}",
+          "tool_call_id": "call_mKevgziJrxbmmzsZqcWrhR0d",
+          "part_kind": "tool-call"
+        }
+      ],
+      "usage": {
+        "input_tokens": 124,
+        "cache_write_tokens": 0,
+        "cache_read_tokens": 0,
+        "output_tokens": 17,
+        "input_audio_tokens": 0,
+        "cache_audio_read_tokens": 0,
+        "output_audio_tokens": 0,
+        "details": {
+          "accepted_prediction_tokens": 0,
+          "audio_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "model_name": "gpt-4o-mini-2024-07-18",
+      "timestamp": "2025-09-30T15:26:31+00:00",
+      "kind": "response",
+      "provider_name": "openai",
+      "provider_details": {
+        "finish_reason": "tool_calls"
+      },
+      "provider_response_id": "chatcmpl-CLWXHQnCKB7Vw9znLaU2sX3I7B5Ia",
+      "finish_reason": "tool_call"
+    },
+    {
+      "parts": [
+        {
+          "tool_name": "text_search",
+          "content": [
+            "Kafka can be installed in Python using the `confluent-kafka` library."
+          ],
+          "tool_call_id": "call_mKevgziJrxbmmzsZqcWrhR0d",
+          "metadata": null,
+          "timestamp": "2025-09-30T15:26:33.172419+00:00",
+          "part_kind": "tool-return"
+        }
+      ],
+      "instructions": "You are a helpful assistant that answers questions about the DataTalks.Club documentation.\nUse the text_search tool when you need to look up information.",
+      "kind": "request"
+    },
+    {
+      "parts": [
+        {
+          "content": "To install Kafka in Python, you can use the `confluent-kafka` library. You can install it using pip with the following command:\n\n```bash\npip install confluent-kafka\n``` \n\nThis library provides a Python client for Apache Kafka.",
+          "id": null,
+          "part_kind": "text"
+        }
+      ],
+      "usage": {
+        "input_tokens": 168,
+        "cache_write_tokens": 0,
+        "cache_read_tokens": 0,
+        "output_tokens": 53,
+        "input_audio_tokens": 0,
+        "cache_audio_read_tokens": 0,
+        "output_audio_tokens": 0,
+        "details": {
+          "accepted_prediction_tokens": 0,
+          "audio_tokens": 0,
+          "reasoning_tokens": 0,
+          "rejected_prediction_tokens": 0
+        }
+      },
+      "model_name": "gpt-4o-mini-2024-07-18",
+      "timestamp": "2025-09-30T15:26:34+00:00",
+      "kind": "response",
+      "provider_name": "openai",
+      "provider_details": {
+        "finish_reason": "stop"
+      },
+      "provider_response_id": "chatcmpl-CLWXKmGOPWsxhuazyWmufplSRPaJW",
+      "finish_reason": "stop"
+    }
+  ],
+  "system_prompt": "No instructions"
+}
